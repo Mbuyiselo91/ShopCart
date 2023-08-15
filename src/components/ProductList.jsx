@@ -7,10 +7,14 @@ export const ProductList = ({product}) => {
      {
         product.map((productItem,productionIndex) =>{
             return(
-                <div>
-                    {
-                        productItem.name
-                    }
+                <div style={{width:'50%'}}>
+                    <div className='product-item'>
+                        <img src={productItem.url} width="100%"/>
+                        <p>{productItem.name} | {productItem.category }</p>
+                        <p>{productItem.seller}</p>
+                        <p>R {productItem.price} /-</p>
+                        <button onClick={()=> addToCart(productItem)}>Add To Cart</button>
+                    </div>
                 </div>
             )
         })
