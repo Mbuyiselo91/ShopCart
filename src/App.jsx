@@ -11,7 +11,7 @@ function App() {
       name: 'TRQ White Shoes',
       category: 'shoes',
       seller: 'AMZ Seller Ghz',
-      price: 1999
+      price: 1999.99
     }
   ])
   const [cart,setCart] = useState([])
