@@ -12,10 +12,10 @@ export const CartList = ({ cart }) => {
   return (
     <div>
       {
-        CART?.map((cartItem, cartindex) => {
+        CART.map((cartItem, cartindex) => {
           return (
             <div>
-              <img src={cartItem.url} with={40} />
+              <img src={cartItem.url} with={30} />
               <span>{cartItem.name}</span>
 
               <button onClick={() => {

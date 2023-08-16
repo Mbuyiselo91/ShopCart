@@ -7,7 +7,7 @@ export const ProductList = ({product}) => {
      {
         product.map((productItem,productionIndex) =>{
             return(
-                <div style={{width:'50%'}}>
+                <div style={{width:'30%'}}>
                     <div className='product-item'>
                         <img src={productItem.url} width="100%"/>
                         <p>{productItem.name} | {productItem.category }</p>
