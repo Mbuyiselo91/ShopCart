@@ -1,5 +1,4 @@
 import './App.css'
-import { CartList } from './components/CartList'
 import Header from './components/Header'
 import { ProductList } from './components/ProductList'
 import { CartList } from './components/CartList' 
@@ -12,9 +11,86 @@ function App() {
       category: 'shoes',
       seller: 'AMZ Seller Ghz',
       price: 1999.99
+    },
+    {
+      url: 'https://thefoschini.vtexassets.com/arquivos/ids/68639897-800-800?v=638265843461930000&width=800&height=800&aspect=true',
+      name: 'TRQ White Shoes',
+      category: 'shoes',
+      seller: 'AMZ Seller Ghz',
+      price: 1999.99
+    }, 
+    {
+      url: 'https://thefoschini.vtexassets.com/arquivos/ids/68639897-800-800?v=638265843461930000&width=800&height=800&aspect=true',
+      name: 'TRQ White Shoes',
+      category: 'shoes',
+      seller: 'AMZ Seller Ghz',
+      price: 1999.99
+    }, 
+    {
+      url: 'https://thefoschini.vtexassets.com/arquivos/ids/68639897-800-800?v=638265843461930000&width=800&height=800&aspect=true',
+      name: 'TRQ White Shoes',
+      category: 'shoes',
+      seller: 'AMZ Seller Ghz',
+      price: 1999.99
+    }, 
+    {
+      url: 'https://thefoschini.vtexassets.com/arquivos/ids/68639897-800-800?v=638265843461930000&width=800&height=800&aspect=true',
+      name: 'TRQ White Shoes',
+      category: 'shoes',
+      seller: 'AMZ Seller Ghz',
+      price: 1999.99
+    },
+    {
+      url: 'https://thefoschini.vtexassets.com/arquivos/ids/68639897-800-800?v=638265843461930000&width=800&height=800&aspect=true',
+      name: 'TRQ White Shoes',
+      category: 'shoes',
+      seller: 'AMZ Seller Ghz',
+      price: 1999.99
+    },
+    {
+      url: 'https://thefoschini.vtexassets.com/arquivos/ids/68639897-800-800?v=638265843461930000&width=800&height=800&aspect=true',
+      name: 'TRQ White Shoes',
+      category: 'shoes',
+      seller: 'AMZ Seller Ghz',
+      price: 1999.99
+    },
+     {
+      url: 'https://thefoschini.vtexassets.com/arquivos/ids/68639897-800-800?v=638265843461930000&width=800&height=800&aspect=true',
+      name: 'TRQ White Shoes',
+      category: 'shoes',
+      seller: 'AMZ Seller Ghz',
+      price: 1999.99
+    },
+    {
+      url: 'https://thefoschini.vtexassets.com/arquivos/ids/68639897-800-800?v=638265843461930000&width=800&height=800&aspect=true',
+      name: 'TRQ White Shoes',
+      category: 'shoes',
+      seller: 'AMZ Seller Ghz',
+      price: 1999.99
+    },
+    {
+      url: 'https://thefoschini.vtexassets.com/arquivos/ids/68639897-800-800?v=638265843461930000&width=800&height=800&aspect=true',
+      name: 'TRQ White Shoes',
+      category: 'shoes',
+      seller: 'AMZ Seller Ghz',
+      price: 1999.99
+    },
+    {
+      url: 'https://thefoschini.vtexassets.com/arquivos/ids/68639897-800-800?v=638265843461930000&width=800&height=800&aspect=true',
+      name: 'TRQ White Shoes',
+      category: 'shoes',
+      seller: 'AMZ Seller Ghz',
+      price: 1999.99
+    },
+    {
+      url: 'https://thefoschini.vtexassets.com/arquivos/ids/68639897-800-800?v=638265843461930000&width=800&height=800&aspect=true',
+      name: 'TRQ White Shoes',
+      category: 'shoes',
+      seller: 'AMZ Seller Ghz',
+      price: 1999.99
     }
   ])
-  const [cart,setCart] = useState()
+  const [cart,setCart] = useState([ ])
   const [showCart, setShowCart] = useState(false)
   const addToCart = (data) => {
     setCart([...cart, {...data, quantity:1}])
