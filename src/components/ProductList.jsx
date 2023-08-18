@@ -1,13 +1,13 @@
 import React from 'react'
 import '../App.css'
 
-export const ProductList = ({product}) => {
+export const ProductList = ({product,addToCart}) => {
   return ( 
     <div className='flex'>
      {
-        product.map((productItem,productionIndex) =>{
+        product.map((productItem,productIndex) =>{
             return(
-                <div style={{width:'30%'}}>
+                <div style={{width:'33%'}}>
                     <div className='product-item'>
                         <img src={productItem.url} width="100%"/>
                         <p>{productItem.name} | {productItem.category }</p>

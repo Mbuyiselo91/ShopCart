@@ -12,7 +12,7 @@ export const CartList = ({ cart }) => {
   return (
     <div>
       {
-        CART.map((cartItem, cartindex) => {
+        CART?.map((cartItem, cartindex) => {
           return (
             <div>
               <img src={cartItem.url} with={30} />
@@ -24,6 +24,7 @@ export const CartList = ({ cart }) => {
                 })
                 setCART(_CART)
               }}
+              
               >-</button>
               <span>{cartItem.quantity}</span>
               <button onClick={() => {
@@ -41,7 +42,7 @@ export const CartList = ({ cart }) => {
       }
       <p>Total  <span></span>
         {
-          CART .map(item => item.price * item.quantity).reduce((total, value) => total + value, 0)
+          CART.map(item => item.price * item.quantity).reduce((total, value) => total + value, 0)
         }
       </p>
     </div>
