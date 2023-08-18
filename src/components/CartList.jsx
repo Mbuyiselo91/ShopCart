@@ -13,27 +13,32 @@ export const CartList = ({ cart }) => {
     <div>
       {
         CART?.map((cartItem, cartindex) => {
+
           return (
-            <div>
+            <div key={cartindex}>
               <img src={cartItem.url} with={30} />
               <span>{cartItem.name}</span>
-
+                 
               <button onClick={() => {
                 const _CART = CART.map((item, index)=> {
-                  return cartindex === index ? {...item, quantity: quantity > 0 ? item.quantity -1 : 0 } : item
+                  return cartindex === index ? {...item, quantity: item.quantity > 0 ? item.quantity -1 : 0 } : item
                 })
                 setCART(_CART)
               }}
               
               >-</button>
+                 {/* count the button sub */}
+
               <span>{cartItem.quantity}</span>
               <button onClick={() => {
                 const _CART = CART.map((item, index)=> {
-                  return cartindex === index ? {...item, quantity: quantity + 1 } : item
+                  return cartindex === index ? {...item, quantity: item.quantity + 1 } : item
                 })
                 setCART(_CART)
               }}
               >+</button>
+                 {/* count the button sub */}
+
               <span>R {cartItem.price * cartItem.quantity}</span>
 
             </div>
